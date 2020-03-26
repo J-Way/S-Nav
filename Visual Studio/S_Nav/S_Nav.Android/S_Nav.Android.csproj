@@ -59,8 +59,11 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>1.68.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -98,9 +101,6 @@
       <Project>{10CD27D5-E56A-486E-9602-3C41DAA5B030}</Project>
       <Name>S_Nav</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TempImages\TRA-E-2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

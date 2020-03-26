@@ -4,6 +4,9 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "S_Nav.Android.dll" comes first in this list. */
 		"S_Nav.Android.dll",
 		"FormsViewGroup.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"S_Nav.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
