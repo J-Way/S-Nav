@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="S_Nav.NavigationPageDetail"
              Title="Detail">
-
-    <skia:SKCanvasView x:Name="canvas"
+    <ContentPage.Content>
+        <skia:SKCanvasView x:Name="canvas"
                        PaintSurface="canvas_PaintSurface"/>
+    </ContentPage.Content>
 </ContentPage>

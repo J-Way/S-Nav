@@ -13,6 +13,8 @@ using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using System.Numerics;
+using System.Diagnostics;
 
 namespace S_Nav
 {
@@ -24,17 +26,25 @@ namespace S_Nav
         SKPaint routeColour = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
-            StrokeWidth = 2,
-            Color = SKColors.Black
+            StrokeWidth = 50,
+            Color = SKColors.Magenta
         };
-        SKPaint colour = new SKPaint
+
+        SKPaint blackStroke = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
-            StrokeWidth = 5,
-            Color = SKColors.Magenta // horrible colour, just a placeholder
+            StrokeWidth = 10,
+            Color = SKColors.Black
+        };
+        SKPaint blackFill = new SKPaint
+        {
+            Style = SKPaintStyle.Fill,
+            StrokeWidth = 10,
+            Color = SKColors.Black
         };
 
         SKBitmap image;
+        SKColor pixelColor;
 
         public NavigationPageDetail()
         {
@@ -44,21 +54,56 @@ namespace S_Nav
         private void canvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
             SKSurface surface = e.Surface;
-            SKCanvas mapCanvas = surface.Canvas;
+            SKCanvas canvas = surface.Canvas;
 
             int width = e.Info.Width;
             int height = e.Info.Height;
 
             float heightTrim = height * 0.75f;
 
-            mapCanvas.Scale(1, 0.75f);
+            canvas.Scale(1, 0.75f);
 
             setFloorPlan(width, (int)heightTrim);
 
-            mapCanvas.DrawRect(0, 0, width, height, colour);
-            mapCanvas.DrawBitmap(image, new SKRect(0, 0, width, height));
+            canvas.DrawRect(0, 0, width, height, blackStroke);
+            canvas.DrawBitmap(image, new SKRect(0, 0, width, height));
 
-            drawRoute(mapCanvas);
+            SKPoint red = new SKPoint(-1,-1), blue = new SKPoint(-1,-1);
+
+            Debug.WriteLine(SKColors.Blue);
+
+            // horribly inefficent, I know
+            for (int x = 0; x < image.Width; x++)
+            {
+                for (int y = 0; y < 697; y++)
+                {                    
+                    pixelColor = image.GetPixel(x, y);
+                    if (pixelColor ==  SKColor.Parse("#FFFE0000") && red.X == -1)
+                    {
+                        red = new SKPoint(x, y);
+                        Debug.WriteLine(red);
+                    }
+                    else if (pixelColor == SKColor.Parse("#FF0001FC") && blue.X == -1)
+                    {
+                        blue = new SKPoint(x, y);
+                        Debug.WriteLine(blue);
+                    }
+
+
+                    if (blue.X != -1 && red.X != -1)
+                    {
+                        x = image.Width;
+                        y = image.Height;
+                    }
+
+                }
+            }
+
+            //image.Width / width;
+            //image.Height / height;
+
+            canvas.DrawRect(new SKRect(853, 701, 1734, 697), blackFill);
+            //canvas.DrawLine(red, blue, blackStroke);
         }
 
 
@@ -68,7 +113,7 @@ namespace S_Nav
         {
             // Bitmap
             Assembly assembly = GetType().GetTypeInfo().Assembly;
-            String resourceID = "S_Nav.TRAE2.jpg";
+            String resourceID = "S_Nav.TRAE2_Test.jpg";
             using (Stream stream = assembly.GetManifestResourceStream(resourceID))
             {
                 image = SKBitmap.Decode(stream);
@@ -78,7 +123,7 @@ namespace S_Nav
         // doesn't need to be outside paintSurface, just is for clarity
         private void drawRoute(SKCanvas canvas)
         {
-            canvas.DrawLine(0, 0, 50, 100, routeColour);
+            canvas.DrawLine(0, 0, 50, 250, routeColour);
         }
     }
 }

@@ -12,9 +12,11 @@
 
   <ItemGroup>
     <None Remove="TRAE2.jpg" />
+    <None Remove="TRAE2_Test.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="TRAE2_Test.jpg" />
     <EmbeddedResource Include="TRAE2.jpg" />
   </ItemGroup>
 
