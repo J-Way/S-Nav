@@ -68,42 +68,14 @@ namespace S_Nav
             canvas.DrawRect(0, 0, width, height, blackStroke);
             canvas.DrawBitmap(image, new SKRect(0, 0, width, height));
 
-            SKPoint red = new SKPoint(-1,-1), blue = new SKPoint(-1,-1);
+            SKPoint[] test = new SKPoint[2];
+            test[0] = new SKPoint(width * 0.33f, heightTrim / 2);
+            test[1] = new SKPoint(width * 0.66f, heightTrim / 2);
 
-            Debug.WriteLine(SKColors.Blue);
+            canvas.DrawPoint(test[0], blackFill);
+            canvas.DrawPoint(test[1], blackFill);
 
-            // horribly inefficent, I know
-            for (int x = 0; x < image.Width; x++)
-            {
-                for (int y = 0; y < 697; y++)
-                {                    
-                    pixelColor = image.GetPixel(x, y);
-                    if (pixelColor ==  SKColor.Parse("#FFFE0000") && red.X == -1)
-                    {
-                        red = new SKPoint(x, y);
-                        Debug.WriteLine(red);
-                    }
-                    else if (pixelColor == SKColor.Parse("#FF0001FC") && blue.X == -1)
-                    {
-                        blue = new SKPoint(x, y);
-                        Debug.WriteLine(blue);
-                    }
-
-
-                    if (blue.X != -1 && red.X != -1)
-                    {
-                        x = image.Width;
-                        y = image.Height;
-                    }
-
-                }
-            }
-
-            //image.Width / width;
-            //image.Height / height;
-
-            canvas.DrawRect(new SKRect(853, 701, 1734, 697), blackFill);
-            //canvas.DrawLine(red, blue, blackStroke);
+            canvas.DrawPoints(SKPointMode.Lines, test, routeColour);
         }
 
 
