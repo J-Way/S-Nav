@@ -11,11 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestBitmap.bmp" />
     <None Remove="TRAE2.jpg" />
     <None Remove="TRAE2_Test.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="TestBitmap.bmp" />
     <EmbeddedResource Include="TRAE2_Test.jpg" />
     <EmbeddedResource Include="TRAE2.jpg" />
   </ItemGroup>
