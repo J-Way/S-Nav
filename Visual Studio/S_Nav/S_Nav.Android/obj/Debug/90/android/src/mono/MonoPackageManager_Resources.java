@@ -8,6 +8,7 @@ public class MonoPackageManager_Resources {
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",
 		"S_Nav.dll",
+		"Tesseract.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "OOzA+7kqAlI6HhqY3eD5K6IjK6eSYmcIEecqBsmvPJYwHxKL7eHvjKC2iuBg5qt5we2agCqmNRGNxNeXgM7OcQ==",
+  "dgSpecHash": "aTULjvYAg4bryTAjIf8L5WTM1HXLcpaebcWrET2xfwW/JHXmbCxkyCm4uBuiNI0CzwhG/D/2ri5m0g23G6cQKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jordan\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\Jordan\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\Jordan\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\Jordan\\.nuget\\packages\\xamarin.essentials\\1.5.1\\xamarin.essentials.1.5.1.nupkg.sha512",
-    "C:\\Users\\Jordan\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.essentials\\1.5.1\\xamarin.essentials.1.5.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
   ],
   "logs": []
 }
