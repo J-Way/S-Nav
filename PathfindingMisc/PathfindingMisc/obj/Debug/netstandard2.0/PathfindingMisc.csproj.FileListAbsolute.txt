@@ -1,0 +1,14 @@
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\bin\Debug\netstandard2.0\PathfindingMisc.deps.json
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\bin\Debug\netstandard2.0\PathfindingMisc.dll
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\PathfindingMisc.csprojAssemblyReference.cache
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\PathfindingMisc.AssemblyInfoInputs.cache
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\PathfindingMisc.AssemblyInfo.cs
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\bin\Debug\netstandard2.0\ref\PathfindingMisc.dll
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\bin\Debug\netstandard2.0\PathfindingMisc.pdb
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\PathfindingMisc.csproj.CoreCompileInputs.cache
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\PathfindingMisc.dll
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\ref\PathfindingMisc.dll
+C:\Users\Jordan\Desktop\PathfindingMisc\PathfindingMisc\obj\Debug\netstandard2.0\PathfindingMisc.pdb
