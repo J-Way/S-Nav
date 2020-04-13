@@ -30,3 +30,4 @@ C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\S_Nav.pdb
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\S_Nav.csproj.CoreCompileInputs.cache
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\Searches\SearchRooms.xaml.g.cs
