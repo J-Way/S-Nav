@@ -8,6 +8,17 @@ namespace S_Nav
     // will later include loading points from file, using hardcoded for now
     class LoadPoints
     {
+        /*
+        public List<String> loadRoomNames()
+        {
+            List<String> rooms = new List<string>();
+
+            rooms.Add("hallTopLeft");
+            rooms.Add("");
+
+            return rooms;
+        }
+        */
 
         public List<MapPoint> loadPoints(int width, int height)
         {

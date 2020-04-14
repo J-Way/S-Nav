@@ -12,6 +12,11 @@ namespace S_Nav
 
         SKPoint pointLocation;
 
+        public String getPointName()
+        {
+            return this.pointName;
+        }
+
         public MapPoint(String pName, SKPoint pLocation)
         {
             this.pointName = pName;
