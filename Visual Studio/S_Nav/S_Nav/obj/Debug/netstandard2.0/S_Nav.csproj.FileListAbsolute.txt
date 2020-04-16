@@ -18,7 +18,6 @@ C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\bin\Debug\netstandard2.0
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\bin\Debug\netstandard2.0\S_Nav.dll
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\bin\Debug\netstandard2.0\ref\S_Nav.dll
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\bin\Debug\netstandard2.0\S_Nav.pdb
-C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\S_Nav.csprojAssemblyReference.cache
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\NavigationPage.xaml.g.cs
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\NavigationPageDetail.xaml.g.cs
@@ -30,7 +29,8 @@ C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\S_Nav.pdb
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\S_Nav.csproj.CoreCompileInputs.cache
 C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\SearchRoom\SearchRoom.xaml.g.cs
-C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\SearchRoom\SearchRoomDetail.xaml.g.cs
-C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\SearchRoom\SearchRoomMaster.xaml.g.cs
-C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\NavPage\Test.xaml.g.cs
+C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\SearchRoom\SearchRoom.xaml.g.cs
+C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\SearchRoom\SearchRoomDetail.xaml.g.cs
+C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\SearchRoom\SearchRoomMaster.xaml.g.cs
+C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\S_Nav.csprojAssemblyReference.cache
+C:\Users\Jordan\Desktop\S-Nav\Visual Studio\S_Nav\S_Nav\obj\Debug\netstandard2.0\Pages\Login\Login.xaml.g.cs

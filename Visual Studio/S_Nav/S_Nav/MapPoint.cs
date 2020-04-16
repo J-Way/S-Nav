@@ -10,7 +10,7 @@ namespace S_Nav
         String pointName;
         String pointDescription; // placeholder for things like bathroom, office, etc.
 
-        SKPoint pointLocation;
+        public SKPoint pointLocation; // remove public modifier after testing
 
         public String getPointName()
         {
@@ -20,6 +20,11 @@ namespace S_Nav
         public MapPoint(String pName, SKPoint pLocation)
         {
             this.pointName = pName;
+            this.pointLocation = pLocation;
+        }
+
+        public MapPoint(SKPoint pLocation)
+        {
             this.pointLocation = pLocation;
         }
 
