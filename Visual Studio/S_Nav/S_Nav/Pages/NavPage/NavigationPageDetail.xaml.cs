@@ -15,6 +15,7 @@ using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using System.Numerics;
 using System.Diagnostics;
+using System.Collections;
 
 namespace S_Nav
 {
@@ -22,19 +23,27 @@ namespace S_Nav
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NavigationPageDetail : ContentPage
     {
-        // Load temp image in (should look into bitmaps)
+        // temporary route colour
         SKPaint routeColour = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
-            StrokeWidth = 50,
+            StrokeWidth = 5,
             Color = SKColors.Magenta
         };
 
+        // spare colours, try to use "strokes" unless
+        // you know what you're doing
         SKPaint blackStroke = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
             StrokeWidth = 10,
             Color = SKColors.Black
+        };
+        SKPaint redStroke = new SKPaint
+        {
+            Style = SKPaintStyle.Stroke,
+            StrokeWidth = 20,
+            Color = SKColors.Red
         };
         SKPaint blackFill = new SKPaint
         {
@@ -43,14 +52,19 @@ namespace S_Nav
             Color = SKColors.Black
         };
 
+        // image being loaded
         SKBitmap image;
-        SKColor pixelColor;
-
+        
+        // creates detail page
+        // dont touch this
         public NavigationPageDetail()
         {
             InitializeComponent();
         }
 
+        ///     handles / calls all the drawing
+        ///     if you need to refresh / reset, call invalidate in
+        ///         NavigationPageDetail()
         private void canvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
             SKSurface surface = e.Surface;
@@ -65,45 +79,34 @@ namespace S_Nav
 
             setFloorPlan(width, (int)heightTrim);
 
-            canvas.DrawRect(0, 0, width, height, blackStroke);
             canvas.DrawBitmap(image, new SKRect(0, 0, width, height));
 
-            SKPoint red = new SKPoint(-1,-1), blue = new SKPoint(-1,-1);
+            canvas.Save(); // unnecessary at this moment, but leave in
 
-            Debug.WriteLine(SKColors.Blue);
+            ///
+            /// code playground
+            ///
+            SKPoint start, end;
+            start = new SKPoint(width * 0.25f, heightTrim * 0.25f);
+            end = new SKPoint(width * 0.75f, heightTrim * 0.75f);
 
-            // horribly inefficent, I know
-            for (int x = 0; x < image.Width; x++)
-            {
-                for (int y = 0; y < 697; y++)
-                {                    
-                    pixelColor = image.GetPixel(x, y);
-                    if (pixelColor ==  SKColor.Parse("#FFFE0000") && red.X == -1)
-                    {
-                        red = new SKPoint(x, y);
-                        Debug.WriteLine(red);
-                    }
-                    else if (pixelColor == SKColor.Parse("#FF0001FC") && blue.X == -1)
-                    {
-                        blue = new SKPoint(x, y);
-                        Debug.WriteLine(blue);
-                    }
+            float[] differential = new float[2]; // difference between image and screen size
+            differential[0] = (float)image.Width / width; // both ints, one needs to be casted for decimal
+            differential[1] = image.Height / heightTrim;
 
+            SKPoint misc = drawRoute(start, end,differential);
 
-                    if (blue.X != -1 && red.X != -1)
-                    {
-                        x = image.Width;
-                        y = image.Height;
-                    }
+            SKPoint[] test = new SKPoint[3];
+            test[0] = start;
+            test[1] = misc;
+            test[2] = end;
+            canvas.DrawPoint(start, blackStroke); // start 
+            canvas.DrawPoint(end, blackStroke); // end
+            canvas.DrawPoint(misc, blackStroke);
+            //canvas.DrawPoints(SKPointMode.Lines, test, routeColour);
 
-                }
-            }
-
-            //image.Width / width;
-            //image.Height / height;
-
-            canvas.DrawRect(new SKRect(853, 701, 1734, 697), blackFill);
-            //canvas.DrawLine(red, blue, blackStroke);
+            ///
+            ///
         }
 
 
@@ -113,7 +116,7 @@ namespace S_Nav
         {
             // Bitmap
             Assembly assembly = GetType().GetTypeInfo().Assembly;
-            String resourceID = "S_Nav.TRAE2_Test.jpg";
+            String resourceID = "S_Nav.TestBitmap.bmp";
             using (Stream stream = assembly.GetManifestResourceStream(resourceID))
             {
                 image = SKBitmap.Decode(stream);
@@ -121,9 +124,40 @@ namespace S_Nav
         }
 
         // doesn't need to be outside paintSurface, just is for clarity
-        private void drawRoute(SKCanvas canvas)
+        private SKPoint drawRoute(SKPoint start, SKPoint end, float[] differential)
         {
-            canvas.DrawLine(0, 0, 50, 250, routeColour);
+            List<SKPoint> points = new List<SKPoint>();
+
+            int pointX, pointY; // references current scanned pixel
+
+            pointX = (int)(start.X * differential[0]); // technically start.X is a float, test for errors after cast
+            pointY = (int)(start.Y * differential[1]);
+
+            float testX = start.X, testY = start.Y;
+
+            bool goRight = true, goDown = true;
+
+            while(pointX != (int)end.X || pointY != (int)end.Y)
+            {
+                #region placeholder
+                /*
+                color = image.GetPixel(pointX + 1, pointY);
+                if(color != SKColors.Black && pointX != (int)end.X)
+                {
+                    pointX++;
+                }
+                else if (image.GetPixel(pointX, pointY + 1) != SKColors.Black && pointY != (int)end.Y)
+                {
+                    pointY++;
+                }
+
+                if (pointX == (int)end.X && pointY == (int)end.Y)
+                    return new SKPoint(pointX, pointY);
+                */
+                #endregion 
+            }
+
+            return new SKPoint(0,0); // no route found, currently return garbage
         }
     }
 }

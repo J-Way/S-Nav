@@ -1,6 +1,5 @@
-﻿using System;
+﻿using S_Nav.Pages.Login;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace S_Nav
 {
@@ -10,7 +9,7 @@ namespace S_Nav
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

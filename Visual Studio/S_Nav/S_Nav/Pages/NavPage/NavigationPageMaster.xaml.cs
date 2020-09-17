@@ -33,11 +33,9 @@ namespace S_Nav
             {
                 MenuItems = new ObservableCollection<NavigationPageMasterMenuItem>(new[]
                 {
-                    new NavigationPageMasterMenuItem { Id = 0, Title = "Page 1" },
-                    new NavigationPageMasterMenuItem { Id = 1, Title = "Page 2" },
-                    new NavigationPageMasterMenuItem { Id = 2, Title = "Page 3" },
-                    new NavigationPageMasterMenuItem { Id = 3, Title = "Page 4" },
-                    new NavigationPageMasterMenuItem { Id = 4, Title = "Page 5" },
+                    new NavigationPageMasterMenuItem { Id = 0, Title = "Unassigned" },
+                    new NavigationPageMasterMenuItem { Id = 1, Title = "Unassigned" },
+                    new NavigationPageMasterMenuItem { Id = 2, Title = "Unassigned" }
                 });
             }
 
