@@ -21,6 +21,12 @@ namespace S_Nav.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            SetContentView(Resource.Layout.layout1);
+
+            var imageView = FindViewById<ImageView>(Resource.Id.imageView1);
+            imageView.SetImageResource(Resource.Drawable.TRAE2);
+
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

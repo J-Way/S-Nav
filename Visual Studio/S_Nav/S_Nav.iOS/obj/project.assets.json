@@ -1233,24 +1233,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jordan\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
       "projectName": "S_Nav.iOS",
-      "projectPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
-      "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\obj\\",
+      "projectPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1264,8 +1264,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj": {
-              "projectPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj"
+            "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj": {
+              "projectPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj"
             }
           }
         }

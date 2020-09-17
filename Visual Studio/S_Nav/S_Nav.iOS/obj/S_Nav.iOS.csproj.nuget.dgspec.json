@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj": {
+    "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
         "projectName": "S_Nav.iOS",
-        "projectPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
-        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\S_Nav.iOS.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj": {
-                "projectPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj"
+              "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj"
               }
             }
           }
@@ -69,21 +69,20 @@
         }
       }
     },
-    "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj": {
+    "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj",
         "projectName": "S_Nav",
-        "projectPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj",
-        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\Desktop\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\S_Nav.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\S-Nav\\Visual Studio\\S_Nav\\S_Nav\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -137,7 +136,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
